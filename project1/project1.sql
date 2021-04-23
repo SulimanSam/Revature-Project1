@@ -68,6 +68,9 @@ CREATE TABLE images (
 	  REFERENCES reimbursements(reimb_id)
 );
 
+INSERT INTO users (user_name,pass,first_name,last_name,user_email,change_password,user_role_id) VALUES
+	 ('suliman','81dc9bdb52d04dc20036dbd8313ed055','Suliman','Sam','saimon.91@hotmail.com',2,1);
+
 SELECT * FROM reimbursements ORDER BY reimb_id ;
 SELECT * FROM users;
 SELECT * FROM user_roles;
