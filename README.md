@@ -39,16 +39,27 @@ submit his own request.
     - approve or deny requests with email notification features.
   
 ##ScreenShot 
+
 ###login page
+
 ![Reimbursement System login page](https://user-images.githubusercontent.com/12229049/115836334-f98f9000-a3dc-11eb-9991-f08d003e0ef5.JPG?raw=true)
+
 ###employee home
+
 ![Reimbursement System employee home](https://user-images.githubusercontent.com/12229049/115836664-5ee38100-a3dd-11eb-981a-3e4e534e27bf.JPG?raw=true)
+
 ###employee new request
+
 ![Reimbursement System employee new request](https://user-images.githubusercontent.com/12229049/115836816-8cc8c580-a3dd-11eb-8bbf-732fe6c5dbdf.JPG?raw=true)
+
 ###employee profile update
+
 ![Reimbursement System employee profile](https://user-images.githubusercontent.com/12229049/115836965-b2ee6580-a3dd-11eb-970c-9301bb034549.JPG?raw=true)
+
 ###employee profile with password update
+
 ![Reimbursement System employee profile with password](https://user-images.githubusercontent.com/12229049/115837295-095ba400-a3de-11eb-9c98-e8ce2c08c45d.JPG?raw=true)
+
 ## Getting Started
 #### First, clone the project
 - git clone https://github.com/SulimanSam/Revature-Project1.git
