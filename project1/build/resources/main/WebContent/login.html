@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+<link rel="icon" type="image/png" href="./resources/imgs/icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./resources/styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+      <div class="container"></div>
+      <form action="" method="POST" class="login-box" id="login-form">
+        <div class="login-box-container">
+          <div class="login-box-left">
+            <h1 class="login-box-title">Welcome!</h1>
+            <p class="login-box-desc">Reimbursements Mangment System</p>
+            <div class="input-block">
+              <label for="email" class="input-label">User Name or Email</label>
+              <input type="text" name="email" id="email" placeholder="User Name or Email" required>
+            </div>
+            <div class="input-block">
+              <label for="password" class="input-label">Password</label>
+              <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            
+            <div class="login-box-buttons">
+                <label for="remember-me" id="remember-lable">Don't Remember Me</label>
+                <input id="remember-me" type="checkbox" class="switch">
+            </div>
+            <hr>
+            <div class="login-box-buttons">
+                <label for="login-type" id="type-lable">Employee Login</label>
+                <input id="login-type" type="checkbox" class="switch">
+            </div>
+            <hr>
+            <div class="login-box-buttons">
+              <a href="" class="">Forgot your password?</a>
+                <button type="submit" class="input-button">Login</button>
+            </div>
+           
+          </div>
+          <div class="login-box-right">
+            <img src="./resources/imgs/main.jpg" alt="">
+          </div>
+          <button type="button" type="button" class="icon-button close-button">
+              <svg viewBox="0 0 50 50">
+                <path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+              </svg>
+          </button>
+        </div>
+          <button type="button" class="login-box-button" type="button">Click here to login</button>
+
+      </form>
+        <!--  Plugin for Sweet Alert -->
+  <script src="./resources/libraries/js/plugins/sweetalert2.js"></script>
+      <script src="./resources/scripts/login.js"></script>
+</body>
+</html>

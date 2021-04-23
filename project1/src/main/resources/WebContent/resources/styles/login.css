@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  height: 200vh;
+  background-image: url(../imgs/background.jpg);
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  -webkit-animation: moveIt 10s linear infinite;
+          animation: moveIt 10s linear infinite;
+}
+
+@-webkit-keyframes moveIt {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+@keyframes moveIt {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+.login-box {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(51, 51, 51, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.login-box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  margin: 7em auto;
+  pointer-events: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background: #fff;
+  -webkit-transform: translateY(100px) scale(0.4);
+          transform: translateY(100px) scale(0.4);
+}
+
+.login-box-title {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 400;
+  color: #55311c;
+}
+
+.login-box-desc {
+  margin: 6px 0 30px 0;
+}
+
+.login-box-left {
+  padding: 60px 30px 20px;
+  background: #fff;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+  opacity: 0;
+}
+
+.login-box-button {
+  color: #7d695e;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 10px 40px;
+  border-radius: 30px;
+  background: white;
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.16);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.login-box-button:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.login-box-right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.login-box-right img {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+}
+
+.login-box.is-open {
+  height: 100%;
+  background: rgba(51, 51, 51, 0.85);
+}
+
+.login-box.is-open .login-box-container {
+  opacity: 1;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  pointer-events: auto;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.login-box.is-open .login-box-right img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.login-box.is-open .login-box-left {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.login-box-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-box-buttons a {
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 14px;
+}
+
+.sign-up {
+  margin: 60px 0 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sign-up a {
+  color: #8c7569;
+}
+
+.input-button {
+  padding: 8px 12px;
+  outline: none;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  background: #8c7569;
+  font-family: "Nunito", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.input-button:hover {
+  background: #55311c;
+}
+
+.input-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  color: #8c7569;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 10px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-block input {
+  outline: 0;
+  border: 0;
+  padding: 4px 0 0;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+.input-block input::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.input-block input:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.input-block input::-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.input-block input::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.input-block:focus-within {
+  border-color: #8c7569;
+}
+
+.input-block:focus-within .input-label {
+  color: rgba(140, 117, 105, 0.8);
+}
+
+.icon-button {
+  outline: 0;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .login-box-container {
+    width: 100%;
+  }
+  .login-box-right {
+    display: none;
+  }
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type='checkbox'] {
+    --active: #275EFE;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    -webkit-transition: background .3s, border-color .3s, -webkit-box-shadow .2s;
+    transition: background .3s, border-color .3s, -webkit-box-shadow .2s;
+    transition: background .3s, border-color .3s, box-shadow .2s;
+    transition: background .3s, border-color .3s, box-shadow .2s, -webkit-box-shadow .2s;
+  }
+  input[type='checkbox']:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+  }
+  input[type='checkbox']:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  }
+  input[type='checkbox']:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: .9;
+  }
+  input[type='checkbox']:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  input[type='checkbox']:disabled + label {
+    cursor: not-allowed;
+  }
+  input[type='checkbox']:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  input[type='checkbox']:focus {
+    -webkit-box-shadow: 0 0 0 var(--focus);
+            box-shadow: 0 0 0 var(--focus);
+  }
+  input[type='checkbox']:not(.switch) {
+    width: 21px;
+  }
+  input[type='checkbox']:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+  input[type='checkbox']:not(.switch):checked {
+    --o: 1;
+  }
+  input[type='checkbox'] + label {
+    font-size: 14px;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  input[type='checkbox']:not(.switch) {
+    border-radius: 7px;
+  }
+  input[type='checkbox']:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 7px;
+    top: 4px;
+    -webkit-transform: rotate(var(--r, 20deg));
+            transform: rotate(var(--r, 20deg));
+  }
+  input[type='checkbox']:not(.switch):checked {
+    --r: 43deg;
+  }
+  input[type='checkbox'].switch {
+    width: 38px;
+    border-radius: 11px;
+  }
+  input[type='checkbox'].switch:after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, var(--border));
+    -webkit-transform: translateX(var(--x, 0));
+            transform: translateX(var(--x, 0));
+  }
+  input[type='checkbox'].switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
+  input[type='checkbox'].switch:disabled:not(:checked):after {
+    opacity: .6;
+  }
+}
+/*# sourceMappingURL=login.css.map */
